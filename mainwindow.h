@@ -22,6 +22,7 @@ private:
     Ui::MainWindow *ui;
     QLabel *currentTimeLabel;//创建Qlabel对象
     QLabel *teamLabel;
+
 };
 
 #endif // MAINWINDOW_H

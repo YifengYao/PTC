@@ -4,7 +4,7 @@
 #include <QDateTime>
 #include <QTimer>
 #include <QString>
-
+#include <QFont>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -12,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     //主界面设定标题
     setWindowTitle(tr("电加热器-电除霜自动检测系统"));
+
+
     currentTimeLabel = new QLabel; // 创建QLabel控件
     teamLabel = new QLabel;
     teamLabel->setText("武汉理工大学吴友宇教授团队");
