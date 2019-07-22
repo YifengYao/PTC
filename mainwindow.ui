@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1368</width>
+    <width>1624</width>
     <height>785</height>
    </rect>
   </property>
@@ -59,20 +59,554 @@
       <property name="font">
        <font>
         <family>Microsoft YaHei UI</family>
-        <pointsize>12</pointsize>
+        <pointsize>20</pointsize>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(240, 240, 240);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_heat">
        <attribute name="title">
         <string>电加热器检测</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="3" rowspan="9">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="6" column="2">
+           <spacer name="verticalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="2">
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>ArrowCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Arial&quot;;
+background-color: rgb(170, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>AUTO</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <spacer name="horizontalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="9" column="2">
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="1" colspan="3">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei UI</family>
+              <pointsize>18</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>生成二维码</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="3">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>删除数据</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="1" colspan="3">
+           <widget class="QLabel" name="label_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string>二维码</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QPushButton" name="pushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>保存数据</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <spacer name="horizontalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="10" column="2">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="8" column="2">
+           <spacer name="verticalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>电参数测试：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>13</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>38</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>输入电压</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>V</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>13</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>输入电流</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
         <item row="4" column="1">
          <spacer name="verticalSpacer_11">
           <property name="orientation">
@@ -121,26 +655,10 @@
           </property>
          </spacer>
         </item>
-        <item row="0" column="3" rowspan="9">
-         <layout class="QGridLayout" name="gridLayout_5">
-          <item row="3" column="2">
-           <spacer name="horizontalSpacer_15">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Expanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="1" column="1" colspan="3">
-           <widget class="QPushButton" name="pushButton_3">
+        <item row="0" column="0" rowspan="9">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -149,180 +667,30 @@
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Microsoft YaHei UI</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>生成二维码</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1" colspan="3">
-           <widget class="QLabel" name="label_11">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>250</width>
-              <height>250</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
               <width>500</width>
-              <height>500</height>
+              <height>40</height>
              </size>
             </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-border-color: rgb(0, 0, 0);</string>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>二维码</string>
-            </property>
-            <property name="textFormat">
-             <enum>Qt::PlainText</enum>
+             <string>当前工位员工</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <spacer name="verticalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="1">
-           <widget class="QPushButton" name="pushButton">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>保存数据</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <spacer name="horizontalSpacer_17">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="3">
-           <widget class="QPushButton" name="pushButton_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>删除数据</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <spacer name="horizontalSpacer_16">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="4" column="2">
-           <spacer name="verticalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-        <item row="0" column="0" rowspan="9">
-         <layout class="QGridLayout" name="gridLayout_4">
           <item row="2" column="1">
            <widget class="QLineEdit" name="lineEdit">
             <property name="enabled">
@@ -336,55 +704,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
-              <height>30</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>30</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QLabel" name="label_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>145</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>220</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>当前工位员工</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -401,21 +735,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
-              <height>35</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>35</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>当前设备型号</string>
@@ -425,7 +759,7 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
+          <item row="5" column="1">
            <widget class="QComboBox" name="comboBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -435,21 +769,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>35</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="duplicatesEnabled">
              <bool>true</bool>
@@ -471,7 +805,7 @@ border-color: rgb(0, 0, 0);</string>
             </item>
            </widget>
           </item>
-          <item row="5" column="0">
+          <item row="7" column="0">
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -487,7 +821,7 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="5" column="2">
+          <item row="7" column="2">
            <spacer name="horizontalSpacer_2">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -500,7 +834,7 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="5" column="1">
+          <item row="7" column="1">
            <widget class="QGroupBox" name="groupBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -510,18 +844,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
+              <width>0</width>
               <height>120</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>120</height>
+              <width>500</width>
+              <height>200</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="title">
              <string>工位选择</string>
@@ -540,18 +874,18 @@ border-color: rgb(0, 0, 0);</string>
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>0</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>500</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
                </property>
                <property name="text">
                 <string>工位一</string>
@@ -568,194 +902,21 @@ border-color: rgb(0, 0, 0);</string>
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>0</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>500</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
                </property>
                <property name="text">
                 <string>工位二</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QGroupBox" name="groupBox_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>220</width>
-              <height>220</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>220</width>
-              <height>220</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="title">
-             <string>电加热器测试选项</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_3">
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_3">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>全选</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_6">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>电参数测试</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_4">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>电功率测试</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_7">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>PWM信号输出</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QCheckBox" name="checkBox_5">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>热保护器通断测试</string>
                </property>
               </widget>
              </item>
@@ -775,8 +936,220 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="7" column="1">
+          <item row="10" column="1">
            <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="9" column="1">
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>220</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="title">
+             <string>电加热器测试选项</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>全选</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="checkBox_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>电参数测试</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>电功率测试</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="checkBox_7">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>PWM信号输出</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="checkBox_5">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>热保护器通断测试</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="1">
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="1">
+           <spacer name="verticalSpacer_14">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -802,21 +1175,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>135</width>
-              <height>35</height>
+              <width>300</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>135</width>
-              <height>35</height>
+              <width>300</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>PWM信号输出</string>
+             <string>PWM信号输出：</string>
             </property>
            </widget>
           </item>
@@ -846,21 +1219,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>40</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>40</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>频率</string>
+             <string>频      率</string>
             </property>
            </widget>
           </item>
@@ -874,15 +1247,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -899,18 +1275,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>30</width>
-              <height>35</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>30</width>
-              <height>35</height>
+              <width>40</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>HZ</string>
@@ -943,18 +1319,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
-              <height>35</height>
+              <width>90</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>60</width>
-              <height>35</height>
+              <width>90</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>占空比</string>
@@ -971,18 +1347,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>60</width>
-              <height>35</height>
+              <width>70</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>60</width>
-              <height>35</height>
+              <width>70</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
            </widget>
           </item>
@@ -1013,21 +1389,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>300</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>300</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>电功率测试</string>
+             <string>电功率测试：</string>
             </property>
            </widget>
           </item>
@@ -1057,18 +1433,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>输出功率</string>
@@ -1085,18 +1461,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1113,18 +1489,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>W</string>
@@ -1133,365 +1509,6 @@ border-color: rgb(0, 0, 0);</string>
           </item>
           <item>
            <spacer name="horizontalSpacer_9">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-        <item row="1" column="1" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QLabel" name="label_5">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>电参数测试</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>13</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_6">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>输入电压</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit_3">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_7">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>20</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>V</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>13</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_8">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>输入电流</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="lineEdit_4">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_9">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>20</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>20</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>A</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_7">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-        <item row="7" column="1" colspan="2">
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QLabel" name="label_24">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>160</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>160</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>热保护器通断测试</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_13">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Fixed</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>13</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioButton_9">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>110</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>通断正常</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioButton_10">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>110</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>110</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>通断异常</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_14">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -1537,6 +1554,123 @@ border-color: rgb(0, 0, 0);</string>
           </property>
          </spacer>
         </item>
+        <item row="7" column="1" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_24">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>热保护器通断测试:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>13</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>通断正常</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>通断异常</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="tab_defrost">
@@ -1546,7 +1680,7 @@ border-color: rgb(0, 0, 0);</string>
        <layout class="QGridLayout" name="gridLayout_19">
         <item row="0" column="0" rowspan="9">
          <layout class="QGridLayout" name="gridLayout_6">
-          <item row="2" column="1">
+          <item row="3" column="1">
            <widget class="QLineEdit" name="lineEdit_2">
             <property name="enabled">
              <bool>true</bool>
@@ -1559,18 +1693,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
-              <height>30</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>30</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string/>
@@ -1580,7 +1714,7 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
+          <item row="4" column="1">
            <widget class="QLabel" name="label_3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1590,21 +1724,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
-              <height>35</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>35</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>当前工位员工</string>
@@ -1624,21 +1758,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
-              <height>35</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>35</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>当前设备型号</string>
@@ -1648,7 +1782,20 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="4" column="1">
+          <item row="7" column="2">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="1">
            <widget class="QComboBox" name="comboBox_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1658,21 +1805,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>0</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>35</height>
+              <width>500</width>
+              <height>40</height>
              </size>
             </property>
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="duplicatesEnabled">
              <bool>true</bool>
@@ -1694,7 +1841,7 @@ border-color: rgb(0, 0, 0);</string>
             </item>
            </widget>
           </item>
-          <item row="5" column="0">
+          <item row="7" column="0">
            <spacer name="horizontalSpacer_3">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -1710,20 +1857,7 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="5" column="2">
-           <spacer name="horizontalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="5" column="1">
+          <item row="7" column="1">
            <widget class="QGroupBox" name="groupBox_3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1733,18 +1867,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>145</width>
+              <width>0</width>
               <height>120</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>220</width>
-              <height>120</height>
+              <width>500</width>
+              <height>200</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="title">
              <string>工位选择</string>
@@ -1763,18 +1897,18 @@ border-color: rgb(0, 0, 0);</string>
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>0</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>500</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
                </property>
                <property name="text">
                 <string>工位一</string>
@@ -1791,194 +1925,21 @@ border-color: rgb(0, 0, 0);</string>
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>0</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>100</width>
-                 <height>35</height>
+                 <width>500</width>
+                 <height>40</height>
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
                </property>
                <property name="text">
                 <string>工位二</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QGroupBox" name="groupBox_4">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>220</width>
-              <height>220</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>220</width>
-              <height>220</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="title">
-             <string>电除霜测试选项</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_8">
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_8">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>全选</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_9">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>输入功率测试</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_10">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>绝缘电阻测试</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_11">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>工频耐压测试</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QCheckBox" name="checkBox_12">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>190</width>
-                 <height>35</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-               </property>
-               <property name="text">
-                <string>泄漏电流测试</string>
                </property>
               </widget>
              </item>
@@ -1998,8 +1959,220 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="7" column="1">
+          <item row="10" column="1">
            <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="9" column="1">
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>220</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="title">
+             <string>电除霜测试选项</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_8">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>全选</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="checkBox_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>输入功率测试</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="checkBox_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>绝缘电阻测试</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="checkBox_11">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>工频耐压测试</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="checkBox_12">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+               </property>
+               <property name="text">
+                <string>泄漏电流测试</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <spacer name="verticalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="1">
+           <spacer name="verticalSpacer_19">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="8" column="1">
+           <spacer name="verticalSpacer_20">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -2031,7 +2204,99 @@ border-color: rgb(0, 0, 0);</string>
         </item>
         <item row="0" column="3" rowspan="9">
          <layout class="QGridLayout" name="gridLayout_18">
-          <item row="3" column="2">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Arial&quot;;
+background-color: rgb(170, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>AUTO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <spacer name="verticalSpacer_21">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="6" column="2">
+           <spacer name="verticalSpacer_22">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="1" colspan="3">
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei UI</family>
+              <pointsize>18</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>生成二维码</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
            <spacer name="horizontalSpacer_58">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -2047,8 +2312,8 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="1" column="1" colspan="3">
-           <widget class="QPushButton" name="pushButton_10">
+          <item row="7" column="3">
+           <widget class="QPushButton" name="pushButton_12">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2057,31 +2322,92 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
               <width>16777215</width>
-              <height>35</height>
+              <height>40</height>
              </size>
             </property>
-            <property name="font">
-             <font>
-              <family>Microsoft YaHei UI</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>生成二维码</string>
+             <string>删除数据</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="1" colspan="3">
+          <item row="3" column="0">
+           <spacer name="horizontalSpacer_60">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="1">
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>保存数据</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <spacer name="horizontalSpacer_59">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="2">
+           <spacer name="verticalSpacer_30">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="1" colspan="3">
            <widget class="QLabel" name="label_64">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -2119,8 +2445,8 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <spacer name="verticalSpacer_30">
+          <item row="8" column="2">
+           <spacer name="verticalSpacer_31">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -2132,90 +2458,8 @@ border-color: rgb(0, 0, 0);</string>
             </property>
            </spacer>
           </item>
-          <item row="3" column="1">
-           <widget class="QPushButton" name="pushButton_11">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>保存数据</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <spacer name="horizontalSpacer_59">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="3">
-           <widget class="QPushButton" name="pushButton_12">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>80</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>删除数据</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <spacer name="horizontalSpacer_60">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="4" column="2">
-           <spacer name="verticalSpacer_31">
+          <item row="2" column="2">
+           <spacer name="verticalSpacer_23">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -2241,21 +2485,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>输入功率测试</string>
+             <string>输入功率测试:</string>
             </property>
            </widget>
           </item>
@@ -2285,18 +2529,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>输入功率</string>
@@ -2313,18 +2557,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>150</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>150</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string/>
@@ -2344,18 +2588,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>W</string>
@@ -2389,21 +2633,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>绝缘电阻测试</string>
+             <string>绝缘电阻测试:</string>
             </property>
            </widget>
           </item>
@@ -2433,18 +2677,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>绝缘电阻</string>
@@ -2461,18 +2705,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>150</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>150</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -2489,18 +2733,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>Ω</string>
@@ -2534,21 +2778,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>工频耐压测试</string>
+             <string>工频耐压测试:</string>
             </property>
            </widget>
           </item>
@@ -2578,18 +2822,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>交流电压</string>
@@ -2606,15 +2850,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -2631,18 +2878,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>20</width>
-              <height>35</height>
+              <width>30</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>V</string>
@@ -2676,21 +2923,21 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>120</width>
-              <height>35</height>
+              <width>240</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
-             <string>泄漏电流测试</string>
+             <string>泄漏电流测试:</string>
             </property>
            </widget>
           </item>
@@ -2720,18 +2967,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>80</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>泄漏电流</string>
@@ -2748,15 +2995,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>100</width>
-              <height>35</height>
+              <width>120</width>
+              <height>40</height>
              </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -2773,18 +3023,18 @@ border-color: rgb(0, 0, 0);</string>
             </property>
             <property name="minimumSize">
              <size>
-              <width>35</width>
-              <height>35</height>
+              <width>50</width>
+              <height>40</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>35</width>
-              <height>35</height>
+              <width>50</width>
+              <height>40</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+             <string notr="true">font: 18pt &quot;Microsoft YaHei UI&quot;;</string>
             </property>
             <property name="text">
              <string>mA</string>
@@ -2881,13 +3131,13 @@ border-color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1368</width>
-     <height>29</height>
+     <width>1624</width>
+     <height>45</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -2916,7 +3166,7 @@ color: rgb(255, 255, 255);</string>
   <widget class="QStatusBar" name="statusBar">
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="styleSheet">
